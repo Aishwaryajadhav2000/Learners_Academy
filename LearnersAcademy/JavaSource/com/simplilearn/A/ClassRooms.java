@@ -35,7 +35,7 @@ public class ClassRooms extends HttpServlet {
 		try {
 			HttpSession session = request.getSession();
 			session.setAttribute("classRooms", classRooms);
-			RequestDispatcher dispatcher = request.getRequestDispatcher("pages/list-classRooms.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("list-classRooms.jsp");
 			dispatcher.forward(request, response);
 		} catch (Exception e) {
 			e.printStackTrace();
