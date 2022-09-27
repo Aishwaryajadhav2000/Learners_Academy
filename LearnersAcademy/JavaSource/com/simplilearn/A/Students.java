@@ -36,7 +36,7 @@ public class Students extends HttpServlet {
 		try {
 			HttpSession session = request.getSession();
 			session.setAttribute("students", students);
-			RequestDispatcher dispatcher = request.getRequestDispatcher("pages/list-students.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("list-students.jsp");
 			dispatcher.forward(request, response);
 		} catch (Exception e) {
 			e.printStackTrace();
